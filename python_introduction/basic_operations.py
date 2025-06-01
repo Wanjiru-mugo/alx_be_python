@@ -7,5 +7,5 @@ product = number1 * number2
 
 #now we print their results 
 print("Addition of", number1, "and", number2, "is", sum)
-print("Subtraction of", number1, "and", number2, "is", different)
-print("Multiplication of", number1 "and", number2, "is", product)
+print("Subtraction of", number1, "and", number2, "is", difference)
+print("Multiplication of", number1, "and", number2, "is", product)
