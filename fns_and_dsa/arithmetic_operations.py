@@ -4,7 +4,7 @@ def perform_operation(num1, num2, operation):
         if num 2 == 0:
             print('undefined')
         else:
-            return num1 /num2
+            return num1 / num2
     elif operation == 'add':
         return num1 + num2
     elif operation == 'subtract':
