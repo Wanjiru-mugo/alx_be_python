@@ -1,6 +1,6 @@
 print('Shopping List Manager')
 
-shopping_list [] #declaring empty list; also shopping_list = list()
+shopping_list = [] #declaring empty list; also shopping_list = list()
 
 def display_menu():
     print('1. Add Item')
