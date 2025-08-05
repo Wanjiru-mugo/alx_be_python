@@ -10,12 +10,12 @@ def display_menu():
         elif item == 'remove':
             item = input('Choose an item to remove from shopping list:').strip().lower()
             if not item in shopping_list:
-                print('Item not found')
+                print(f'Item not found')
             else:
                 shopping_list.remove(item)
         elif item == 'view':
             print(shopping_list)
         elif item == 'exit':
-            print('Goodbye')
+            print(f'Goodbye')
         else:
-            print('Invalid choice. Please try again')
+            print(f'Invalid choice. Please try again')
