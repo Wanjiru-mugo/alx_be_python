@@ -12,10 +12,10 @@ def display_menu():
         item = input('Enter your choice (1-4): ').strip()
 
         if item == '1':
-            item = input('Add an item to the shopping list:').strip().lower()
+            item = input('Enter the item to add:').strip().lower()
             shopping_list.append(item)
         elif item == '2':
-            item = input('Choose an item to remove from shopping list:').strip().lower()
+            item = input('Enter the item to remove:').strip().lower()
             if not item in shopping_list:
                 print(f'Item not found')
             else:
