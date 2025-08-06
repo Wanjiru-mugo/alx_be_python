@@ -1,5 +1,5 @@
-FAHRENHEIT_TO_CELSIUS_FACTOR = 5 / 9 #global var
-CELSIUS_TO_FAHRENHEIT_FACTOR = 9 / 5 #global var
+FAHRENHEIT_TO_CELSIUS_FACTOR = 5/9 #global var
+CELSIUS_TO_FAHRENHEIT_FACTOR = 9/5 #global var
 
 def convert_to_celsius(fahrenheit):
     global FAHRENHEIT_TO_CELSIUS_FACTOR
@@ -17,7 +17,7 @@ if ans == 'F':
     new_temp = convert_to_celsius(temp)
     print(new_temp)
 elif ans == 'C':
-    new_temp = convert_to_celsius(temp)
+    new_temp = convert_to_farenheit(temp)
     print(new_temp)
 else:
     print('Invalid temperature. Please enter a numeric value.')
