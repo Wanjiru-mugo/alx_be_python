@@ -3,10 +3,10 @@ from datetime import datetime #class object returns current time
 from datetime import timedelta #class method returns time difference from given date
 
 def display_current_datetime():
-    current_date = date.today().isoformat()
-    now_time = datetime.now().strftime('%H:%M:%S')
+    #now_date = date.today().isoformat()
+    current_date = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 
-    print(f'Current date and time: {current_date} {now_time}')
+    print(f'Current date and time: {current_date}')
 
 def calculate_future_date():
     days = int(input('Enter the number of days to add to the current date: '))
