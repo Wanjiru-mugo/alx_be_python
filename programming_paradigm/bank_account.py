@@ -8,7 +8,8 @@ class BankAccount:
         return f"Deposited: ${amount}"
     def withdraw(self, amount):
         if amount > self.account_balance:
-            print("Insufficient funds.")    
+            print("Insufficient funds.")
+            break
 
         else:
             self.account_balance -= amount
