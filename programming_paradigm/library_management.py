@@ -2,17 +2,17 @@ class Book:
     def __init__(self, title, author):
         self.title = title
         self.author = author
-        self._is_checked_out = False #initialised private attribute
+        self._is_checked_out = False #initialised private attribute with default is available
 
     def check_out(self):
-        if not self._is_checked_out:
-            return True
+        if not self._is_checked_out: #means if book is available
+            return True #change book status to true (success) 
         else:
-            return False
+            return False #if not available status remains false(fails)
 
-    def return_book(self):
-        if self._is_checked_out:
-            return True
+    def return_book(self): #works opposite to check_out()
+        if self._is_checked_out: #if true book is returned and available 
+            return True #return true it was returned
         else:
             return False
 
