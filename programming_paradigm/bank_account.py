@@ -4,6 +4,7 @@ class BankAccount:
     def deposit(self, amount):
         amount += self.account_balance
         self.account_balance = amount
+        self.initial_balance = 0
         return f"Deposited: ${amount}"
     def withdraw(self, amount):
         if amount > self.account_balance:
