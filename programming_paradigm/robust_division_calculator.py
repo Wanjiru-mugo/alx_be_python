@@ -1,4 +1,4 @@
-def safe_divide(numerator, denominator):
+def safe_divide(numerator: float, denominator: float):
     try:
         if denominator == 0:
             raise ZeroDivisionError
