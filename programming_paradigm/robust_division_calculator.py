@@ -11,6 +11,5 @@ def safe_divide(numerator, denominator):
     except ZeroDivisionError:
         return f"Error: Cannot divide by zero."
     except ValueError:
-        if not isinstance(numerator, (int, float)) and isinstance(denominator, (int, float)):
             return f"Error: Please enter numeric values only."
 
