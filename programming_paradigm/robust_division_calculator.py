@@ -7,7 +7,7 @@ def safe_divide(numerator, denominator):
             raise ZeroDivisionError
         else:
             result = numerator / denominator
-            print(f"The result of the division is {result: .1f}")
+            return f"The result of the division is {result:.1f}"
     except ZeroDivisionError:
         return f"Error: Cannot divide by zero."
     except ValueError:
