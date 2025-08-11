@@ -12,7 +12,7 @@ class BankAccount:
 
         else:
             self.account_balance -= amount
-            print('Withdrew: .1f')
+            print('Withdrew: ${amount:.1f}')
             
     def display_balance(self):
         print(f"Current Balance: ${self.account_balance:.2f}")
