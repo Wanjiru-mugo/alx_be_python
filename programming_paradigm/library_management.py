@@ -16,6 +16,7 @@ class Library:
 
     def return_book(self, title):
         self.__books.add(title)
+        return True
 
     def list_available_books(self):
         print(self.__books)
