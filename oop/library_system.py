@@ -14,7 +14,7 @@ class EBook(Book):
         super().__init__(title, author)
         self.file_size = file_size
 
-class PrintBook:
+class PrintBook(Book):
     """
     this class represents a physical book
     it inherits from the parent class Book
