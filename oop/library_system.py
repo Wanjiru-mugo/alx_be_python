@@ -14,7 +14,7 @@ class EBook(Book):
     this class reps objects passed as softcopy books
     it inheris the parent class attributes
     """
-    def __init__(self, file_size: int):
+    def __init__(self, title: str, author: str, file_size: int):
         super().__init__(title, author)
         self.file_size = file_size
     
@@ -26,8 +26,8 @@ class PrintBook(Book):
     this class represents a physical book
     it inherits from the parent class Book
     """
-    def __init__(self, page_count: int):
-        #calling the base class __init__ method whose attributes are needed for         each instance
+    def __init__(self, title: str, author: str, page_count: int):
+        #calling the base class __init__ method whose attributes are needed for each instance
         super().__init__(title, author)
         self.page_count = page_count
 
