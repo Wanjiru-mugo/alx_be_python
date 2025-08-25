@@ -5,6 +5,10 @@ class Book:
     def __init__(self, title: str, author: str):
         self.title = title
         self.author = author
+
+    def __str__(self):
+        print(f"Book: {self.title} by {self.author}")
+
 class EBook(Book):
     """
     this class reps objects passed as softcopy books
@@ -13,6 +17,9 @@ class EBook(Book):
     def __init__(self, file_size: int):
         super().__init__(title, author)
         self.file_size = file_size
+    
+    def __str__(self):
+        print(f"EBook: {self.title} by {self.author}, File Size: {self.file_size}kb")
 
 class PrintBook(Book):
     """
@@ -23,6 +30,9 @@ class PrintBook(Book):
         #calling the base class __init__ method whose attributes are needed for         each instance
         super().__init__(title, author)
         self.page_count = page_count
+
+    def __str__(self):
+        print(f"PrintBook: {self.title} by {self.author}, Page Count: {self.page_count}")
 
 class Library:
     """
@@ -48,12 +58,4 @@ class Library:
         if not self.books:
             print("The library is empty.")
         else:
-            for books in self.books:
-                #we have to check instance type and declare it
-                if isinstance(book, Ebook):
-                    print(f"Ebook: {self.title} by {self.author}")
-                elif isinstance(book, PrintBook):
-                    print(f"PrintBook: {self.title} by {self.author}, Page Count: {self.page_count}")
-
-                else:
-                    print(f"Book: {self.title} by {self.author})
+            print(self.books)
