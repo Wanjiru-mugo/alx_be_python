@@ -55,7 +55,5 @@ class Library:
         """
         displays all books in the library 
         """
-        if not self.books:
-            print("The library is empty.")
-        else:
-            print(self.books)
+        for book in self.books:
+            print(book) 
